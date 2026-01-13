@@ -238,11 +238,11 @@
             margin-bottom: 15px;
         }
         
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-        }
+        @media (min-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
         
         .project-card {
             background: white;
@@ -449,63 +449,89 @@
     </section>
 
     <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">JAN 2025 - APR 2025</span>
-                        <h3>Data Analyst</h3>
-                        <h4>Web-Based Custom Booking Solution - Remote</h4>
-                        <ul>
-                            <li>Developed data-driven business categorization systems by analyzing customer interaction patterns and text data using NLP techniques</li>
-                            <li>Created dynamic form generation logic through analysis of user behavior data and conversion funnel optimization</li>
-                            <li>Implemented booking optimization algorithms by analyzing historical booking data and identifying efficiency patterns</li>
-                            <li>Translated complex ML model outputs into actionable business insights for operational improvements</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">DEC 2023 - PRESENT</span>
-                        <h3>Data Analyst</h3>
-                        <h4>Datacamp</h4>
-                        <ul>
-                            <li>Proficient in Python and SQL for data manipulation and automation</li>
-                            <li>Skilled in hypothesis testing, regression analysis, and predictive modeling</li>
-                            <li>Experience with large datasets, database querying, and building actionable insights</li>
-                            <li>Expertise in creating dashboards and reports to communicate data-driven findings</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">NOV 2022 - AUG 2024</span>
-                        <h3>Business Manager (Analyst)</h3>
-                        <h4>Confectionately Yours Ventures - Lagos</h4>
-                        <ul>
-                            <li>Collected, transformed, and organized production data using Excel and other data analytics tools</li>
-                            <li>Revised purchase ordering logic to minimize overstock, increasing purchasing power by 10%</li>
-                            <li>Conducted regular data audits to identify inefficiencies, leading to data-driven corrective measures and a 50% increase in productivity</li>
-                            <li>Designed Power BI dashboards tracking 15+ KPIs, reducing manual reporting time by 65%</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">DEC 2018 - SEP 2021</span>
-                        <h3>Operations Manager</h3>
-                        <h4>The Ice Cream Factory - Lagos</h4>
-                        <ul>
-                            <li>Managed overall business performance by optimizing operations, controlling costs, and scheduling labor</li>
-                            <li>Used data insights to make informed decisions that achieved company objectives and sales targets</li>
-                            <li>Trained and developed team members according to company standards, monitoring progress and performance data</li>
-                        </ul>
-                    </div>
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            
+            <!-- NEW: Data Specialist - Ofanda Africa -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">AUG 2025 - DEC 2025 · 5 mos</span>
+                    <h3>Data Specialist</h3>
+                    <h4>Ofanda Africa · Freelance · Lagos, Nigeria · Hybrid</h4>
+                    <ul>
+                        <li>Led comprehensive market assessment analyzing 50+ hotel properties across Nigeria to establish valuation benchmarks for institutional investors</li>
+                        <li>Designed and deployed a proprietary market survey collecting 32+ operational and financial metrics (occupancy, ADR, RevPAR, GOP margins)</li>
+                        <li>Built interactive Power BI dashboards featuring market gap analysis, competitive benchmarking, and investment opportunity heatmaps</li>
+                        <li>Developed normalized data model using DAX and star schema architecture, transforming survey responses into actionable insights</li>
+                        <li>Created executive summary frameworks translating complex market data into strategic recommendations</li>
+                        <li>Identified underserved segments representing ₦500M+ revenue opportunity with estimated market size at ₦450B annually</li>
+                    </ul>
                 </div>
             </div>
+
+            <!-- Data Analyst - Web-Based Custom Booking Solution -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">JAN 2025 - APR 2025 · 4 mos</span>
+                    <h3>Data Analyst</h3>
+                    <h4>Web-Based Custom Booking Solution - Remote</h4>
+                    <ul>
+                        <li>Developed data-driven business categorization systems by analyzing customer interaction patterns and text data using NLP techniques</li>
+                        <li>Created dynamic form generation logic through analysis of user behavior data and conversion funnel optimization</li>
+                        <li>Implemented booking optimization algorithms by analyzing historical booking data and identifying efficiency patterns</li>
+                        <li>Translated complex ML model outputs into actionable business insights for operational improvements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Data Analyst - Datacamp -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">DEC 2023 - PRESENT</span>
+                    <h3>Data Analyst</h3>
+                    <h4>Datacamp</h4>
+                    <ul>
+                        <li>Proficient in Python and SQL for data manipulation and automation</li>
+                        <li>Skilled in hypothesis testing, regression analysis, and predictive modeling</li>
+                        <li>Experience with large datasets, database querying, and building actionable insights</li>
+                        <li>Expertise in creating dashboards and reports to communicate data-driven findings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Business Manager - Confectionately Yours Ventures -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">NOV 2022 - AUG 2024 · 1 yr 10 mos</span>
+                    <h3>Business Manager (Analyst)</h3>
+                    <h4>Confectionately Yours Ventures - Lagos</h4>
+                    <ul>
+                        <li>Collected, transformed, and organized production data using Excel and other data analytics tools</li>
+                        <li>Revised purchase ordering logic to minimize overstock, increasing purchasing power by 10%</li>
+                        <li>Conducted regular data audits to identify inefficiencies, leading to data-driven corrective measures and a 50% increase in productivity</li>
+                        <li>Designed Power BI dashboards tracking 15+ KPIs, reducing manual reporting time by 65%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Operations Manager - The Ice Cream Factory -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">DEC 2018 - SEP 2021 · 2 yrs 10 mos</span>
+                    <h3>Operations Manager</h3>
+                    <h4>The Ice Cream Factory - Lagos</h4>
+                    <ul>
+                        <li>Managed overall business performance by optimizing operations, controlling costs, and scheduling labor</li>
+                        <li>Used data insights to make informed decisions that achieved company objectives and sales targets</li>
+                        <li>Trained and developed team members according to company standards, monitoring progress and performance data</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="projects" style="background-color: #f5f7fa;">
     <div class="container">
@@ -526,6 +552,24 @@
                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZDM2M2Q5ZjItMTU2My00NWRlLTgyYWMtZGM2NzFmYjE1MzUyIiwidCI6ImVjYWIwYWY4LTY1ZGEtNDkyNi05OTBhLWFmYzJhYjE2NDZhMiJ9" class="btn" target="_blank">View Project</a>
                 </div>
             </div>
+            <!-- Project 4: Sales Forecasting -->
+<div class="project-card">
+    <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sales Forecasting Dashboard" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="project-content">
+        <h3>Sales Forecasting & Inventory Optimization</h3>
+        <p>Built end-to-end sales forecasting models predicting store-level weekly demand with up to 99.4% accuracy, implementing inventory optimization logic for retail operations.</p>
+        <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Time Series</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Forecasting</span>
+            <span class="tag">Inventory Optimization</span>
+        </div>
+        <a href="https://www.kaggle.com/code/sannimohammedsanni/sales-forecasting-and-inventory-optimization/edit" class="btn" target="_blank">View on Kaggle</a>
+    </div>
+</div>
             <div class="project-card">
                 <div class="project-img">
                     <img src="https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VzdG9tZXIlMjBjaHVybiUyMGFuYWx5c2lzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900" alt="Customer Churn Analysis" style="width:100%; height:100%; object-fit:cover;">
@@ -624,5 +668,6 @@
 </body>
 
 </html>
+
 
 
