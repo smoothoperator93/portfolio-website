@@ -629,31 +629,73 @@
     </section>
 
     <section id="contact" style="background-color: #f5f7fa;">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p style="text-align: center; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Have a data challenge? Need analytics support? Let's discuss how we can work together to turn your data into actionable insights.
+        </p>
+        
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mpqlolkj" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company / Organization</label>
+                    <input type="text" id="company" name="company" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required placeholder="e.g., Data Analytics Project Inquiry">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" class="form-control" required 
+                              placeholder="Tell me about your project, data challenge, or how I can help..." 
+                              rows="6"></textarea>
+                </div>
+                
+                <div style="text-align: center;">
                     <button type="submit" class="btn">Send Message</button>
-                </form>
+                </div>
+                
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #666;">
+                    I typically respond within 24 hours. You can also email me directly at 
+                    <a href="mailto:sannisanni93@yahoo.com">sannisanni93@yahoo.com</a>
+                </p>
+            </form>
+        </div>
+        
+        <!-- Direct Contact Info -->
+        <div style="margin-top: 60px; text-align: center;">
+            <h3 style="margin-bottom: 20px;">Direct Contact</h3>
+            <div style="display: inline-block; text-align: left;">
+                <p style="margin-bottom: 10px;">
+                    <strong>Email:</strong> 
+                    <a href="mailto:sannisanni93@yahoo.com">sannisanni93@yahoo.com</a>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <strong>Whatsapp:</strong> +234 802 658 2964
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <strong>Location:</strong> Lagos, Nigeria
+                </p>
+                <p>
+                    <strong>Available for:</strong> Freelance Projects • Full-time Roles • Consulting • Collaborations
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer>
         <div class="container">
@@ -668,6 +710,7 @@
 </body>
 
 </html>
+
 
 
 
